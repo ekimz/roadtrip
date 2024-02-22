@@ -1,5 +1,30 @@
 # National Parks Road Trip Summer 2023 - Video Sorting and Organization
 
+Update Feb 22 2024: Used the following command to change majority of the video files' "Created On" dates for better organization via the following in Terminal after installation:
+
+```
+exiftool '-FileModifyDate<CreationDate' DIR
+```
+
+However, some files even after attempting this change do not have updated "Created On" dates. Furthermore looking at the files, received the following warning:
+
+```
+"Warning                         : End of processing at large atom (LargeFileSupport not enabled)"
+```
+
+After some snooping, found that adding -api largefilesupport=1 will enable LargeFileSupport, so adding that solved the date issue:
+
+```
+exiftool -api largefilesupport=1 '-FileModifyDate<CreationDate' FILEorDIR
+```
+
+The following warning may come up:
+```
+Warning: [minor] The ExtractEmbedded option may find more tags in the media data
+```
+but it's not a big deal; it won't overwrite anything and is letting us know that there are more tags than you might expect in the files.
+
+
 Update Feb 21 2024: Downloaded videos from iCloud starting from the beginning of the road trip (May 1 2023) up to Jun 7 2023.
 
 
