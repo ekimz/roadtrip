@@ -1,4 +1,9 @@
 # National Parks Road Trip Summer 2023 - Video Sorting and Organization
+
+Update Feb 21 2024: Downloaded videos from iCloud starting from the beginning of the road trip (May 1 2023) up to Jun 7 2023.
+
+
+## Documentation
 This is the process documentation of sorting and organizing all the video files I have of the drives we took during our road trip. 
 
 I don't know why I didn't buy a GoPro, a dashcam, or a different device to capture the drives we had, but I didn't. I instead purchased a new phone, which, now that I think about it, is very strange, and my stubbornness led me to not create a new iCloud account or anything which in retrospect would have made a lot of sense considering how much space I ended up requiring -- either way, I ultimately ran into the issue of needing more space. Our drives were anywhere between under five minutes if it was a quick to and fro, up to over 10 hours long, depending on the leg of our trip, which meant that videos I took ended up being sometimes over 30 GB each, which eats a ton of space.
@@ -14,5 +19,4 @@ exiftool '-FileModifyDate<CreationDate' DIR
 ```
 
 Anyway I'm going to keep adding to this as I go along for documentation purposes. Yay
-
 
