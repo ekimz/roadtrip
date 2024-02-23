@@ -12,7 +12,7 @@ However, some files even after attempting this change do not have updated "Creat
 "Warning                         : End of processing at large atom (LargeFileSupport not enabled)"
 ```
 
-After some snooping, found that adding -api largefilesupport=1 will enable LargeFileSupport, so adding that solved the date issue:
+After some snooping, found that files that are over 5GB in size received this warning and required some help. Adding -api largefilesupport=1 will enable LargeFileSupport helped solve the date issue:
 
 ```
 exiftool -api largefilesupport=1 '-FileModifyDate<CreationDate' FILEorDIR
