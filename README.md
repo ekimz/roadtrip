@@ -1,6 +1,6 @@
 # National Parks Road Trip Summer 2023 - Video Sorting and Organization
 
-Update Feb 22 2024: Used the following command to change majority of the video files' "Created On" dates for better organization via the following in Terminal after installation:
+Update Feb 22 2024: Downloaded up to Sep 18 2023. Used the following command to change majority of the video files' "Created On" dates for better organization via the following in Terminal after installation:
 
 ```
 exiftool '-FileModifyDate<CreationDate' DIR
